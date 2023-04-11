@@ -7,12 +7,12 @@
 var a = 3;
 var b = 4;
 var c = 5; 
-if (a == b && b !== c) {
+if (a == b && b == c) {
     console.log('The triangle with side a = ' + a + ', side b = ' + b + ' and side c = ' + c + ' is an isosceles triangle.');
 }
-if (a == b && b == c) {
+else if (a == b || b == c || a == c) {
     console.log('The triangle with side a = ' + a + ', side b = ' + b + ' and side c = ' + c + ' is an equilateral triangle.');
 }
-if (a !== b && b !== c) {
+else {
     console.log('The triangle with side a = ' + a + ', side b = ' + b + ' and side c = ' + c + ' is a scalene triangle.');
 }

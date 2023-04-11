@@ -4,8 +4,14 @@
  * Nếu x ko phải số, in ra "... is not a valid number"
  */
 var x = 8;
-if (x % 2 ==1){
-    console.log(x + ' ' + 'is odd');
+if (typeof x == 'number') {
+    if (x % 2 == 1) {
+      console.log(x + ' is odd');
+    }
+    else {
+      console.log(x + ' is even');
+    }
 }
-else {console.log(x + ' ' + 'is even')
+else {
+  console.log(x + ' is not a valid number');
 }
