@@ -5,7 +5,7 @@
  * In ra tiếng anh hết nhé :))
  * */
 var a = 3;
-var b = 4;
+var b = 3;
 var c = 5; 
 if (a == b && b == c) {
     console.log('The triangle with side a = ' + a + ', side b = ' + b + ' and side c = ' + c + ' is an isosceles triangle.');
