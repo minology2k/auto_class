@@ -6,19 +6,16 @@
  */
 var a = 4;
 var b = 2;
+
 var operatorType = "divide";
 if (operatorType == "add") {
-    console.log(a + b);
-}
-else if (operatorType == "minus") {
-    console.log(a - b);
-}
-else if (operatorType == "multiple") {
-    console.log(a * b);
-}
-else if (operatorType == "divide") {
-    console.log(a / b);
-}
-else {
-    console.log("Invalid operator");
+  console.log(a + b);
+} else if (operatorType == "minus") {
+  console.log(a - b);
+} else if (operatorType == "multiple") {
+  console.log(a * b);
+} else if (operatorType == "divide") {
+  console.log(a / b);
+} else {
+  console.log("Invalid operator");
 }
