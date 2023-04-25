@@ -3,6 +3,7 @@
  * eg: var result = circleArea(3) = 28.274333882308138
  * */
 function circleArea(r) {
-console.log(r * r * Math.PI)  
+    return (r * r * Math.PI);
 }
-circleArea(3)
+var result = circleArea(3);
+console.log(result);

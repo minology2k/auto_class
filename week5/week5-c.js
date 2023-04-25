@@ -6,14 +6,15 @@
 }
  * */
 function convertToMillisecond(number, convertType) {
-    if (convertType = 'SECOND') {
-        console.log(number * 1000 + 'ms');
+    if (convertType === 'SECOND') {
+        return (number * 1000 + 'ms');
     }
-    else if (convertType = 'MINUTE') {
-        console.log(number * 60000 + 'ms');
+    else if (convertType === 'MINUTE') {
+        return (number * 60000 + 'ms');
     }
-    else if (convertType = 'HOUR') {
-        console.log(number * 360000000 + 'ms');
+    else if (convertType === 'HOUR') {
+        return (number * 360000000 + 'ms');
     }
 }
-convertToMillisecond(2, 'MINUTE');
+var convertTime = convertToMillisecond(2, 'MINUTE');
+console.log(convertTime);

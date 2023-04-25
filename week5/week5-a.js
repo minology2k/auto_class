@@ -3,7 +3,8 @@
  * eg: var result = getCharactersInName("Dinh Duyen") => result will be: Duyen
  * */
 function getCharactersInName(fullName) {
-    console.log(fullName.split(' ')[0
-    ]);
+    var fullNameInString = fullName.split(' ');
+    return fullNameInString[fullNameInString.length - 1];
 }
-getCharactersInName('Dinh Thi Hue Duyen');
+var firstName = getCharactersInName('Dinh Thi Hue Duyen');
+console.log(firstName);
