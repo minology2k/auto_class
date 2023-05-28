@@ -3,3 +3,11 @@
  * Eg: compareString("aBc", "aBC") -> true
  * Eg: compareString("aBc", "aBdC") -> false
  * */
+var string1 = 'abc';
+var string2 = 'ABC';
+var isTrue = string1 === string2;
+console.log(string1 === string2);
+
+var string1 = 'abc';
+var string2 = 'ABC';
+console.log(string1 === string2);
