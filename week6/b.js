@@ -6,7 +6,9 @@
  * Eg: dayInWeek(8) -> Monday
  * Eg: dayInWeek(10) -> Wednesday
  * */
-var today = new Date("2023-05-28");
-var day = today.getDay();
+function nameOfToday (stringdate) {
+var date = new Date(stringdate);
 var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"];
-console.log(dayNames[day]);
+console.log(dayNames[date.getDay()]);
+}
+nameOfToday ("2023-05-29")
