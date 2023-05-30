@@ -3,7 +3,8 @@
  * Eg: compareString("aBc", "aBC") -> true
  * Eg: compareString("aBc", "aBdC") -> false
  * */
-function isTrue (string1, string2) {
-    console.log(string1 === string2);
+function compareString(string1, string2) {
+    return string1.toLowerCase() === string2.toLowerCase();
 }
-isTrue ('abc', 'aBc');
+var result = compareString ('abcd', 'aBc');
+console.log(result)
