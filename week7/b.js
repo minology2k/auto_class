@@ -10,3 +10,13 @@
  * eg: checkHour(abc) -> null
  * eg: checkHour(5.5) -> null
  * */
+function checkHour(index) {
+    var result; 
+    if (index >= 0 && index <= 12) {
+       result = index + ':00 AM';
+     }
+else {result = (index > 12 && index < 25) ? (index + ':00 PM') : 'null';
+}
+console.log(result); 
+}                                                                                           
+checkHour(-2);
