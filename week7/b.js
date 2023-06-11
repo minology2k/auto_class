@@ -17,6 +17,6 @@ function checkHour(index) {
      }
 else {result = (index > 12 && index < 25) ? (index + ':00 PM') : 'null';
 }
-console.log(result); 
+return result; 
 }                                                                                           
-checkHour(-2);
+console.log(checkHour(0));

@@ -10,44 +10,44 @@
 function checkMonth(index) {
     switch(index) {
         case 1:
-            console.log('January');
+            return 'January';
             break;
         case 2:
-            console.log('February');
+            return 'February';
             break;
         case 3:
-            console.log('March');
+            return 'March';
             break;
         case 4:
-            console.log('April');
+            return 'April';
             break;
         case 5:
-            console.log('May');
+            return 'May';
             break;
         case 6:
-            console.log('June');
+            return 'June';
             break;
         case 7:
-            console.log('July');
+            return 'July';
             break;
         case 8:
-            console.log('August');
+            return 'August';
             break;
         case 9:
-            console.log('September');
+            return 'September';
             break;
         case 10:
-            console.log('October');
+            return 'October';
             break;
         case 11:
-            console.log('November');
+            return 'November';
             break;
         case 12:
-            console.log('December');
+            return 'December';
             break;
         default:
-        console.log('INVALID INPUT');
+            return 'INVALID INPUT';
     }
 }
 
-checkMonth('a');
+console.log(checkMonth('a'));
