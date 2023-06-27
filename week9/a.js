@@ -4,10 +4,9 @@
 function findMaxNumber() {
     var max = 0;
     var arrayOfNumber = [1, 9, 3, 14];
-    for (var key in arrayOfNumber) {
-        if (arrayOfNumber[key] > max) {
-            max = arrayOfNumber[key];
-            key++;
+    for (var item of arrayOfNumber) {
+        if (item > max) {
+            max = item;
         }
     }      
     return max; 

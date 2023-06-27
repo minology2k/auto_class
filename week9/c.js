@@ -1,32 +1,37 @@
-var stringOfNumbers = [1, 3, 0, 4];
+var arrayOfNumbers = [1, 0, -6, 16];
 
- 
-
-function findEvenNumber() {
-
-    function findMaxNumber() {
+    function findMaxNumber(input) {
         var max = 0;
-        for (key in stringOfNumbers) {
-            if (stringOfNumbers[key] > max) {
-                max = stringOfNumbers[key];
+        for (key in arrayOfNumbers) {
+            if (arrayOfNumbers[key] > max) {
+                max = arrayOfNumbers[key];
             }
         }
         return max;
     }
 
-    function findMinNumber() {
-        var min = stringOfNumbers[0];
-        for (key in stringOfNumbers) {
-            if (stringOfNumbers[key] < min) {
-                min = stringOfNumbers[key];
+ 
+
+    function findMinNumber(input) {
+        var min = arrayOfNumbers[0];
+        for (key in arrayOfNumbers) {
+            if (arrayOfNumbers[key] < min) {
+                min = arrayOfNumbers[key];
             }
         }
         return min;
     }
-    var num = 0;
-    while(num%2 == 0 && num <= 2) {
-    console.log(num);
-    num += 2;
-    }
+
+    function findEvenNumber(input) {
+    var maxNumber = findMaxNumber(arrayOfNumbers);
+    var minNumber = findMinNumber(arrayOfNumbers);
+    var i = minNumber % 2 == 0 ? minNumber : minNumber + 1;
+    var result = [];
+    for (i; i <= maxNumber; i += 2) {
+        if (i % 2 === 0) {
+            result.push(i);
+            }
+        }        
+    return result
 }
-findEvenNumber()
+console.log(findEvenNumber(arrayOfNumbers))
